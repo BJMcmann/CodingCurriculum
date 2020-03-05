@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Exercise 7</title>
+  <meta name="description" content="ITA CSS Layout Exercise">
+  <meta name="author" content="Mark Kroh">
+
+  <style>
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content:space-around;
+		/* grid-template-rows: ;
+		grid-gap: 10px;
+		position:fixed; */
+	}
+	.div1 {
+		background: red;
+		/* position: relative; */
+		opacity: 1.0;
+		width: 100px;
+		height: 100px;
+		left: 150px;
+		
+	} 
+	.div1::before{
+		background:red;
+		opacity: 0.75;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 120px;
+	}
+	.div1::after{
+		background: red;
+		opacity: 0.5;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 240px;
+	}
+	.div2 {
+		background: orange;
+		/* position: relative; */
+		opacity: 1.0;
+		width: 100px;
+		height: 100px;
+		left: 870px;
+		top: 0px;
+	}
+	.div2::before{
+		background: orange;
+		opacity: 0.75;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 120px;
+	}
+	.div2::after{
+		background: orange;
+		opacity: 0.5;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 240px;
+	}
+	.div3 {
+		background: yellow;
+		/* position: relative; */
+		opacity: 1.0;
+		width: 100px;
+		height: 100px;
+		left: 150px;
+		top: 240px;
+	}
+	.div3::before{
+		background: yellow;
+		opacity: 0.75;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 120px;
+	}
+	.div3::after{
+		background: yellow;
+		opacity: 0.5;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 240px;
+	}
+	.div4 {
+		background: blue;
+		/* position: relative; */
+		opacity: 1.0;
+		/* grid-area: div4; */
+		width: 100px;
+		height: 100px;
+		left: 150px;
+		top: 240px;
+	}
+	.div4::before{
+		background: blue;
+		opacity: 0.75;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 120px;
+	}
+	.div4::after{
+		background: blue;
+		opacity: 0.5;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 240px;
+	}
+	.div5 {
+		background: rgb(232, 115, 236);
+		/* position: relative; */
+		opacity: 1.0;
+		grid-area: div5;
+		width: 100px;
+		height: 100px;
+		left: 150px;
+		top: 360px;
+		
+	}
+	.div5::before{
+		background: rgb(232, 115, 236);
+		opacity: 0.75;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 120px;
+		
+	}
+	.div5::after{
+		background:rgb(232, 115, 236) ;
+		opacity: 0.5;
+		content: "";
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 240px;
+	
+	}
+
+  </style>
+</head>
+<body>
+	<!-- Do not touch the HTML please -->
+	<div class="container">
+		<div class="interior div1"></div>
+		<div class="interior div2"></div>
+		<div class="interior div3"></div>
+		<div class="interior div4"></div>
+		<div class="interior div5"></div>
+	</div>
+</body>
+</html>
